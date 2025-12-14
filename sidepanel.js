@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('summarizeBTN').addEventListener('click', summarizeText);
 document.getElementById('saveNotesBTN').addEventListener('click', saveNotes);
 
+const backendUrl = 'https://research-assistant-ext-v1-0-0.onrender.com/api/research/process';
+
 
 async function summarizeText() {
     try{
@@ -21,7 +23,7 @@ async function summarizeText() {
             showResult("Please select some text first")
         }
 
-        const response = await fetch('http://localhost:8080/api/research/process', {
+        const response = await fetch(backendUrl, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({content: result, operation: 'summarize'})
