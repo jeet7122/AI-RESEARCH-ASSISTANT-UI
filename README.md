@@ -67,16 +67,17 @@ $1
 
 ---
 
-## 🔑 Configuration (Gemini API Key)
+## 🔑 Backend & API Configuration
 
-1. Get your Gemini API key from **Google AI Studio**
-2. Add your API key in the appropriate JS file:
+No API key setup is required from the user side.
 
-```js
-const GEMINI_API_KEY = "YOUR_API_KEY_HERE";
-```
+This Chrome extension connects to a **secure backend service** that is **deployed on Render and runs 24×7**. The Gemini Flash 2.5 API key is safely managed on the server, ensuring:
 
-⚠️ **Do not expose your API key in public repositories**. Use environment variables or a secure setup for production.
+- 🔐 No API keys are exposed on the client
+- ⚙️ Zero configuration for users
+- 🚀 Reliable and always-on summarization service
+
+Simply install the extension and start using it — everything works out of the box.
 
 ---
 
