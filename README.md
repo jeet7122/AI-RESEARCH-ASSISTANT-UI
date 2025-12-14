@@ -39,10 +39,6 @@ AI Research Assistant is a lightweight Chrome extension designed to **summarize 
 ---
 ![Extension UI – Demo](./assets/ss3.png)
 ---
-**Copying and Saving Notes**
----
-![Extension UI – Copy-Notes](./assets/ss4.png)
-
 
 
 $1
